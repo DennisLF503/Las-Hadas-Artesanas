@@ -1,0 +1,100 @@
+/* ===== ESTILOS GENERALES (iguales en todo el sitio) ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ===== ENCABEZADO / MENÚ ===== */
+header {
+  background-color: #d98b8b;
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECCIÓN ACERCA DE NOSOTROS ===== */
+.contenedor-acerca {
+  display: flex;
+  flex-wrap: wrap;       /* en pantallas pequeñas pasa a columna */
+  gap: 30px;
+  padding: 30px 20px;
+  align-items: flex-start;
+}
+
+/* AJUSTE DE LA IMAGEN DE PERFIL */
+.imagen-perfil {
+  width: 250px;          /* ancho fijo de la foto */
+  height: 250px;         /* alto fijo, hace que sea cuadrada */
+  object-fit: cover;     /* recorta sin deformar */
+  border-radius: 50%;    /* la convierte en círculo (opcional) */
+}
+
+.texto-acerca {
+  flex: 1;               /* ocupa el espacio restante */
+  min-width: 250px;
+}
+
+.texto-acerca h2 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #b85c5c;
+}
+
+.texto-acerca p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #b85c5c;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedor-acerca {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

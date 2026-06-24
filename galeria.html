@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Hadas Artesanas - Galería</title>
+  <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+
+  <!--ENCABEZADO / MENÚ-->
+  <header>
+    <nav>
+      <h1>Las Hadas Artesanas</h1>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de Nosotros</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="pedido.html">Hacer Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Galería de Trabajos</h2>
+
+    <!--CUADRÍCULA DE IMÁGENES-->
+    <div class="galeria">
+      <!-- ESPACIO PARA IMÁGENES: cada img es una foto de la galería -->
+      <img src="imagenes/Trabajo_uno_galeria.jpg" alt="Trabajo Crochet 1" class="imagen-galeria">
+      <img src="imagenes/trabajo_dos_galeria.png" alt="Trabajo Crochet 2" class="imagen-galeria">
+      <img src="imagenes/trabajo_tres_galeria.jpg" alt="Trabajo Velas Aromaticas 1" class="imagen-galeria">
+      <img src="imagenes/trabajo_cuatro_galeria.jpg" alt="Trabajo Velas Aromaticas 2" class="imagen-galeria">
+      <img src="imagenes/trabajo_cinco_galeria.jpeg" alt="Trabajo Flores Eternas 1" class="imagen-galeria">
+      <img src="imagenes/trabajo_seis_galeria.jpg" alt="Trabajo Flores Eternas 2" class="imagen-galeria">
+      
+    </div>
+  </main>
+
+  <!--VENTANA EMERGENTE (LIGHTBOX) PARA VER LA IMAGEN GRANDE-->
+  <div class="lightbox" id="lightbox">
+    <span class="cerrar" id="cerrarLightbox">&times;</span>
+    <img src="" alt="Imagen ampliada" id="imagenLightbox">
+  </div>
+
+  <!--PIE DE PÁGINA-->
+  <footer>
+    <p>Las Hadas Artesanas.</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script src="js/galeria.js"></script>
+</body>
+</html>

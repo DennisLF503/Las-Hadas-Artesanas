@@ -1,0 +1,134 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ===== ENCABEZADO / MENÚ ===== */
+header {
+  background-color: #d98b8b;
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== TÍTULO DE LA SECCIÓN ===== */
+.titulo-seccion {
+  text-align: center;
+  margin: 25px 0 15px;
+  color: #b85c5c;
+}
+
+/* ===== FORMULARIO ===== */
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;       /* centrado horizontal */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Resalta en rojo el campo que falló la validación (clase añadida por JS) */
+.formulario .campo-invalido {
+  border-color: #c0392b;
+  background-color: #fdecea;
+}
+
+/* Mensaje de error (lo controla el JS) */
+.error {
+  color: #c0392b;
+  font-size: 14px;
+  min-height: 18px; /* reserva espacio aunque esté vacío */
+}
+
+/* Mensaje de confirmación al enviar correctamente */
+.confirmacion {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Botón de enviar */
+.boton-enviar {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #b85c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  background-color: #9c4a4a;
+}
+
+/* Estilo del botón mientras se está enviando el formulario */
+.boton-enviar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #b85c5c;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}

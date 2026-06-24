@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Hadas Artesanas - Catálogo</title>
+  <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO / MENÚ -->
+  <header>
+    <nav>
+      <h1>Las Hadas Artesanas</h1>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de Nosotros</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="pedido.html">Hacer Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Nuestro Catálogo</h2>
+
+    <!-- BOTONES DE FILTRO POR CATEGORÍA -->
+    <div class="filtros">
+      <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="crochet">Crochet</button>
+      <button class="filtro-btn" data-categoria="velas">Velas Aromáticas</button>
+      <button class="filtro-btn" data-categoria="flores">Flores Eternas</button>
+    </div>
+
+    <!-- CUADRÍCULA DE PRODUCTOS -->
+    <div class="productos">
+
+      <!-- Producto de Crochet -->
+      <div class="tarjeta" data-categoria="crochet">
+        <img src="imagenes/trabajo_dos_galeria.png" alt="Bolso de crochet" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Bolso de Crochet</h3>
+          <p>Bolso tejido a mano, disponible en varios colores.</p>
+          <p class="precio">$15.00</p>
+        </div>
+      </div>
+
+      <!-- Producto de Velas -->
+      <div class="tarjeta" data-categoria="velas">
+        <img src="imagenes/trabajo_cuatro_galeria.jpg" alt="Vela aromática" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Vela Aromática </h3>
+          <p>Elaborada con cera natural y aceites esenciales.</p>
+          <p class="precio">$8.00</p>
+        </div>
+      </div>
+
+      <!-- Producto de Flores -->
+      <div class="tarjeta" data-categoria="flores">
+        <img src="imagenes/trabajo_cinco_galeria.jpeg" alt="Flor eterna" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Rosa Eterna</h3>
+          <p>Flor preservada que dura mucho más tiempo que una flor natural.</p>
+          <p class="precio">$12.00</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>Las Hadas Artesanas</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Hadas Artesanas - Hacer Pedido</title>
+  <link rel="stylesheet" href="css/pedido.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO / MENÚ -->
+  <header>
+    <nav>
+      <h1>Las Hadas Artesanas</h1>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de Nosotros</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="pedido.html">Hacer Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Formulario de Pedido</h2>
+
+    <!-- FORMULARIO -->
+    <form id="formPedido" class="formulario" action="https://formspree.io/f/mdaranlj" method="POST" novalidate>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+      <label for="producto">Producto de interés:</label>
+      <select id="producto" name="producto">
+        <option value="">-- Selecciona una opción --</option>
+        <option value="crochet">Crochet</option>
+        <option value="velas">Velas Aromáticas</option>
+        <option value="flores">Flores Eternas</option>
+      </select>
+
+      <label for="personalizacion">Personalización deseada:</label>
+      <input type="text" id="personalizacion" name="personalizacion" placeholder="Color, tamaño, aroma, etc.">
+
+      <label for="mensaje">Mensaje o consulta:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+
+      <!-- Aquí aparecerán los mensajes de error generados por JS -->
+      <p id="errorMensaje" class="error"></p>
+
+      <button type="submit" class="boton-enviar">Enviar Pedido</button>
+
+      <!-- Mensaje de confirmación, oculto hasta que se envíe correctamente -->
+      <p id="confirmacionMensaje" class="confirmacion"></p>
+    </form>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>Las Hadas Artesanas.</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script src="js/pedido.js"></script>
+</body>
+</html>
