@@ -1,4 +1,4 @@
-/* ===== ESTILOS GENERALES ===== */
+/*  ESTILOS GENERALES  */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* ===== ENCABEZADO / MENÚ ===== */
+/*  ENCABEZADO / MENÚ  */
 header {
   background-color: #d98b8b;
   padding: 15px 20px;
@@ -46,7 +46,7 @@ nav {
   color: #b85c5c;
 }
 
-/* ===== FORMULARIO ===== */
+/* FORMULARIO  */
 .formulario {
   max-width: 500px;
   margin: 0 auto;       /* centrado horizontal */
@@ -112,7 +112,7 @@ nav {
   cursor: not-allowed;
 }
 
-/* ===== PIE DE PÁGINA ===== */
+/* PIE DE PÁGINA */
 footer {
   text-align: center;
   background-color: #eee;
