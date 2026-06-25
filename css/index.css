@@ -1,4 +1,4 @@
-/* ===== ESTILOS GENERALES ===== */
+/*  ESTILOS GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* ===== ENCABEZADO / MENÚ ===== */
+/* ENCABEZADO / MENÚ */
 header {
   background-color: #d98b8b; /* color cálido, puedes cambiarlo a la identidad de marca */
   padding: 15px 20px;
@@ -39,7 +39,7 @@ nav {
   text-decoration: underline;
 }
 
-/* ===== BANNER PRINCIPAL ===== */
+/* BANNER PRINCIPAL */
 .banner {
   text-align: center;
   padding: 30px 20px;
@@ -84,7 +84,7 @@ nav {
   background-color: #9c4a4a;
 }
 
-/* ===== PIE DE PÁGINA ===== */
+/* PIE DE PÁGINA */
 footer {
   text-align: center;
   background-color: #eee;
@@ -97,7 +97,7 @@ footer a {
   text-decoration: none;
 }
 
-/* ===== VISTA PREVIA DE LÍNEAS DE PRODUCTOS ===== */
+/* VISTA PREVIA DE LÍNEAS DE PRODUCTOS */
 .titulo-seccion {
   text-align: center;
   margin-bottom: 20px;
@@ -137,7 +137,7 @@ footer a {
   font-size: 14px;
 }
 
-/* ===== RESPONSIVE: PANTALLAS PEQUEÑAS ===== */
+/* RESPONSIVE: PANTALLAS PEQUEÑAS */
 @media (max-width: 600px) {
   nav {
     flex-direction: column; /* el menú se acomoda en columna en móviles */

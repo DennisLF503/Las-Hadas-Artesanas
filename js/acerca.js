@@ -1,4 +1,4 @@
-// ===== JS DE LA PÁGINA "ACERCA DE NOSOTROS" =====
+//  JS DE LA PÁGINA "ACERCA DE NOSOTROS" 
 
 document.addEventListener("DOMContentLoaded", function () {
 

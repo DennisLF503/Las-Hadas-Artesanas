@@ -1,4 +1,4 @@
-// ===== JS DE LA PÁGINA DE GALERÍA =====
+//  JS DE LA PÁGINA DE GALERÍA 
 // Funcionalidad: efecto lightbox (ampliar imagen al hacer clic)
 
 document.addEventListener("DOMContentLoaded", function () {

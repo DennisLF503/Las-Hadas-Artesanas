@@ -1,4 +1,4 @@
-// ===== JS DE LA PÁGINA DE PEDIDO =====
+//  JS DE LA PÁGINA DE PEDIDO 
 // Funcionalidad: 1) validar el formulario  2) enviar los datos a Formspree (almacenamiento real)
 
 document.addEventListener("DOMContentLoaded", function () {

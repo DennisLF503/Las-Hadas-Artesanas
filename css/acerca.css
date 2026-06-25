@@ -1,4 +1,4 @@
-/* ===== ESTILOS GENERALES (iguales en todo el sitio) ===== */
+/* ESTILOS GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ nav {
   text-decoration: underline;
 }
 
-/* ===== SECCIÓN ACERCA DE NOSOTROS ===== */
+/* SECCIÓN ACERCA DE NOSOTROS */
 .contenedor-acerca {
   display: flex;
   flex-wrap: wrap;       /* en pantallas pequeñas pasa a columna */
@@ -72,7 +72,7 @@ nav {
   line-height: 1.5;
 }
 
-/* ===== PIE DE PÁGINA ===== */
+/* PIE DE PÁGINA */
 footer {
   text-align: center;
   background-color: #eee;
@@ -85,7 +85,7 @@ footer a {
   text-decoration: none;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;

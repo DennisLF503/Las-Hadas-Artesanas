@@ -1,4 +1,4 @@
-//  JS DE LA PÁGINA DE CATÁLOGO =====
+//  JS DE LA PÁGINA DE CATÁLOGO 
 // Funcionalidad: Filtro de productos por categoría sin recargar la página
 
 document.addEventListener("DOMContentLoaded", function () {

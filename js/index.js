@@ -1,4 +1,4 @@
-// ===== JS DE LA PÁGINA DE INICIO =====
+//  JS DE LA PÁGINA DE INICIO 
 
 // Esperamos a que todo el contenido HTML esté cargado
 document.addEventListener("DOMContentLoaded", function () {
