@@ -1,0 +1,146 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* evita problemas de tamaño con padding y border */
+}
+
+body {
+  font-family: Arial, sans-serif; /* tipografía simple, puedes cambiarla por una de Google Fonts */
+  color: #333;
+}
+
+/* ===== ENCABEZADO / MENÚ ===== */
+header {
+  background-color: #d98b8b; /* color cálido, puedes cambiarlo a la identidad de marca */
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* para que se acomode en pantallas pequeñas */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.banner {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* AJUSTE DE LA IMAGEN DEL BANNER */
+.imagen-banner {
+  width: 100%;          /* ocupa todo el ancho disponible del contenedor */
+  max-width: 900px;     /* nunca crece más de 900px en pantallas grandes */
+  height: auto;         /* mantiene la proporción real de la imagen (1360x440) */
+  display: block;
+  margin: 0 auto;       /* la centra horizontalmente */
+  border-radius: 10px;  /* bordes redondeados (opcional) */
+}
+
+.texto-banner {
+  margin-top: 20px;
+}
+
+.texto-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.texto-banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Botón de llamada a la acción */
+.boton-cta {
+  display: inline-block;
+  background-color: #b85c5c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton-cta:hover {
+  background-color: #9c4a4a;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #b85c5c;
+  text-decoration: none;
+}
+
+/* ===== VISTA PREVIA DE LÍNEAS DE PRODUCTOS ===== */
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b85c5c;
+}
+
+.grid-lineas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* se adapta a la pantalla */
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.tarjeta-linea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* AJUSTE DE LAS IMÁGENES DE CADA LÍNEA DE PRODUCTO */
+.imagen-linea {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;   /* recorta sin deformar, llena el espacio asignado */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-linea h3 {
+  color: #b85c5c;
+  margin-bottom: 5px;
+}
+
+.tarjeta-linea p {
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE: PANTALLAS PEQUEÑAS ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column; /* el menú se acomoda en columna en móviles */
+    text-align: center;
+  }
+}

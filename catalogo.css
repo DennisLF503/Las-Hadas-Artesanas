@@ -1,0 +1,160 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ENCABEZADO / MENÚ */
+header {
+  background-color: #d98b8b;
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* TÍTULO DE LA SECCIÓN */
+.titulo-seccion {
+  text-align: center;
+  margin: 25px 0 15px;
+  color: #b85c5c;
+}
+
+/* BOTONES DE FILTRO */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filtro-btn {
+  padding: 8px 16px;
+  border: 2px solid #b85c5c;
+  background-color: white;
+  color: #b85c5c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Estilo del botón cuando está activo/seleccionado */
+.filtro-btn.activo {
+  background-color: #b85c5c;
+  color: white;
+}
+
+/* CUADRÍCULA DE PRODUCTOS */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* tarjetas más anchas para el formato horizontal */
+  gap: 20px;
+  padding: 0 20px 30px;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0;
+  text-align: left;
+  display: flex;            /* organiza imagen y texto en fila */
+  align-items: stretch;
+  overflow: hidden;         /* recorta bordes redondeados con la imagen */
+}
+
+/* AJUSTE DE LA IMAGEN DEL PRODUCTO (lado izquierdo) */
+.imagen-producto {
+  width: 45%;            /* ancho del cuadro de imagen, ajusta si quieres */
+  min-width: 160px;
+  height: 220px;
+  object-fit: contain;   /* muestra la imagen COMPLETA, sin recortar */
+  background-color: #f0e6e2; /* color de fondo que rellena el espacio vacío */
+  margin: 0;
+  border-radius: 0;
+  flex-shrink: 0;        /* evita que la imagen se achique */
+}
+
+/* Contenedor del texto (lado derecho) */
+.info-producto {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarjeta h3 {
+  margin-bottom: 5px;
+  color: #b85c5c;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Clase usada por JS para ocultar los productos filtrados */
+.oculto {
+  display: none;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 15px;
+}
+
+footer a {
+  color: #b85c5c;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* En pantallas pequeñas, la tarjeta pasa de fila a columna */
+  .tarjeta {
+    flex-direction: column;
+  }
+
+  .imagen-producto {
+    width: 100%;
+    height: 200px;
+  }
+}
