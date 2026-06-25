@@ -19,5 +19,5 @@ el cualquier momento
 
 - *Instituto Nacional de San Miguel Tepezontes*
 - *Módulo 1.3 Desarrollo de Paginas Web*
-- *Actividad Integradora - Desarrollo, control de versiones y publicación del sitio web 
+- *Actividad Integradora - Desarrollo, control de versiones y publicación del sitio web*
 - *Docente:* *Gloria Yessenia Marmol de Muñoz*
